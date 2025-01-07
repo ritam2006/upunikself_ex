@@ -5,5 +5,14 @@ module.exports = {
   },
   images: {
     domains: ['books.google.com']
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
+        permanent: true,
+      },
+    ];
+  },
 };
