@@ -10,7 +10,7 @@ export async function GET(req) {
     return NextResponse.json({ error: 'Query parameter "q" is required' }, { status: 400 });
   }
 
-  const apiKey = process.env.GOOGLE_BOOKS_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_BOOKS_API_KEY;
 
   try {
     const response = await fetch(`${GOOGLE_BOOKS_API_URL}?q=${query}&key=${apiKey}&maxResults=12`);

@@ -6,8 +6,8 @@ import { db } from "./firebase/config";
 import { collection, getDocs } from "firebase/firestore";
 
 export const metadata = {
-  title: "idk",
-  description: "UpUnikSelf Exercise 2",
+  title: "UpUnikSelf Exercise",
+  description: "UpUnikSelf Exercise",
 };
 
 export default async function RootLayout({ children }) {
