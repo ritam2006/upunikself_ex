@@ -3,7 +3,8 @@ import Image from "next/image";
 import AddOrRemovebutton from "@/app/components/AddOrRemoveButton";
 
 // const URL = "http://localhost:3000";
-const URL = "upunikself-ex.vercel.app";
+// const URL = "upunikself-ex.vercel.app";
+const URL = "";
 
 async function getBook(id) {
   try {
