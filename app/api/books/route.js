@@ -13,7 +13,7 @@ export async function GET(req) {
   const apiKey = process.env.GOOGLE_BOOKS_API_KEY;
 
   try {
-    const response = await fetch(`${GOOGLE_BOOKS_API_URL}?q=${query}&key=${apiKey}`);
+    const response = await fetch(`${GOOGLE_BOOKS_API_URL}?q=${query}&key=${apiKey}&maxResults=12`);
     const data = await response.json();
 
     const books = data.items?.map((book) => ({
