@@ -4,11 +4,11 @@ import AddOrRemovebutton from "@/app/components/AddOrRemoveButton";
 
 // const URL = "http://localhost:3000";
 // const URL = "upunikself-ex.vercel.app";
-const URL = "";
+// const URL = "";
 
 async function getBook(id) {
   try {
-    const response = await fetch(URL + `/api/book/${id}`, { cache: 'no-store' });
+    const response = await fetch(`https://upunikself-ex.vercel.app/api/book/${id}`, { cache: 'no-store' });
     if (!response.ok) {
       if (response.status === 404) {
         throw new Error('Book Not Found');
